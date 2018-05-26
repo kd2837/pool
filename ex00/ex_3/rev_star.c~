@@ -1,0 +1,20 @@
+void my_putchar(char s)
+{
+  write(1, &s, 1);
+}
+
+void _reversestring()
+{
+  char s;
+
+  s = 'abcdefgdddfa';
+  reverseString(s);
+  my_putchar(s);
+
+  return;
+}
+
+int main ()
+{
+  rev_star();
+}

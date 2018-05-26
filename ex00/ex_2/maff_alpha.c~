@@ -1,0 +1,19 @@
+void my_putchar(char c)
+{
+  write(1, &c, 1);
+}
+
+void maff_alpha(void)
+{
+  int b = 96;
+  int a;
+
+  while (b < 123)
+    {
+      b++;
+      my_putchar(a);
+      a = b;
+    }
+  
+  return;
+}
