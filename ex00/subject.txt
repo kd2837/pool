@@ -1,0 +1,97 @@
+-------------------------------------------------------------------------------
+Exercise 1 : aff_z
+_______________________
+Executable name         :       aff_z
+Directory name          :       ex_1
+Suggested time          :       30 minutes.
+Allowed functions       :       my_putchar
+
+        Write a program that takes a string as parameter and displays
+	on the standard output the first 'z' character encountered followed
+	by a '\n'. If no 'z' is encountered in the string, the program
+	displays 'z' followed by '\n'. If there are no parameters, the
+	program displays 'z' followed by '\n'.
+
+
+example 1:cd 
+(jog@almarita)./aff_z "abc"
+z
+(jog@almarita)
+
+example 2:
+(jog@almarita) ./aff_z "  Chiche A POal " | cat -e
+z$
+(jog@almarita)
+
+example 3:
+(jog@almarita) ./aff_z " AkjhZ zLKIJz , 23y"
+z
+(jog@almarita)
+
+example 4:
+(jog@almarita) ./aff_z | cat -e
+z$
+(jog@almarita)
+
+-------------------------------------------------------------------------------
+Exercise 2 : maff_alpha
+------------------------
+C file name             :       maff_alpha.c
+Directory name          :       ex_2
+Suggested time          :       20 minutes.
+Allowed functions       :       my_putchar
+Compilation             :       cc -o maff_alpha maff_alpha.c
+
+
+	Write a program that displays the alphabet, one letter in
+	lowercase, one in uppercase, etc ... (see example)
+
+	The maff_alpha.c will contain the main and everything needed
+	(including my_putchar)
+
+	CAUTION: the program will be compiled as follows:
+		 cc -o maff_alpha maff_alpha.c
+
+
+Example :
+(jog@almarita)./maff_alpha
+aBcDeFgHiJkLmNoPqRsTuVwXyZ
+(jog@almarita)./maff_alpha | cat -e
+aBcDeFgHiJkLmNoPqRsTuVwXyZ$
+(jog@almarita)
+
+-------------------------------------------------------------------------------
+Exercise 3 : rev_str
+__________________________
+Executable name         :       rev_str
+Directory name          :       ex_3
+Language                :       C
+Suggested time          :       15 minutes
+Allowed functions       :       my_putchar
+Makefile                :       yes
+
+
+	Write a program that takes a string and displays it after
+	reversing all its characters.
+	If no parameter is passed, the program displays '\n'.
+
+
+Example 1:
+(jog@almarita)./rev_str "bonjour nina la fleur" | cat -e
+ruelf al anin ruojnob$
+(jog@almarita)
+
+Example 2:
+(jog@almarita)./rev_str "soline et josephine s'aiment beaucoup" | cat -e
+puocuaeb tnemia's enihpesoj te enilos$
+(jog@almarita)
+
+Example 3:
+(jog@almarita)./rev_str "moche est quand meme tres moche" | cat -e
+ehcom sert emem dnauq tse ehcom$
+(jog@almarita)
+
+Example 4:
+(jog@almarita)./rev_str | cat -e
+$
+(jog@almarita)
